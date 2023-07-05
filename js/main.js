@@ -72,3 +72,38 @@ coffeesContainer.innerHTML = renderCoffees(coffees);
 
 roastSelection.addEventListener('input', updateCoffees);
 
+coffeesContainer.innerHTML = renderCoffees(coffees);
+
+// submitButton.addEventListener('click', updateCoffees);
+
+roastSelection.addEventListener('input', updateCoffees);
+
+const addCoffeeForm = document.getElementById('add-coffee-form');
+
+addCoffeeForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    const coffeeNameInput = document.getElementById('coffee-name');
+    const coffeeRoastInput = document.getElementById('coffee-roast');
+
+    const coffee = {
+        id: coffees.length + 1, // Generate a unique ID for the new coffee
+        name: coffeeNameInput.value,
+        roast: coffeeRoastInput.value
+    };
+
+    coffees.push(coffee); // Add the new coffee to the array
+
+    // Store the updated coffees array in local storage
+    localStorage.setItem('coffees', JSON.stringify(coffees));
+
+    coffeesContainer.innerHTML = renderCoffees(coffees); // Update the coffee list on the page
+
+    addCoffeeForm.reset(); // Reset the form inputs
+});
+
+
+
+
+// Render the coffees on the page
+coffeesContainer.innerHTML = renderCoffees(coffees);
