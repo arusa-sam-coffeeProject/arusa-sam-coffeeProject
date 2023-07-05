@@ -21,7 +21,7 @@ function renderCoffees(coffees) {
 
 
 function updateCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
+    // e.preventDefault(); // don't submit the form, we just want to update the data
     let selectedRoast = roastSelection.value;
     let searchValue = searchInput.value.trim().toLowerCase(); // Get the search term and convert to lowercase
     let filteredCoffees = [];
@@ -77,3 +77,6 @@ coffeesContainer.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 
+roastSelection.addEventListener('input', updateCoffees);
+
+searchInput.addEventListener('input', updateCoffees);
