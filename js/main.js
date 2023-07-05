@@ -28,12 +28,15 @@ function updateCoffees(e) {
 
     coffees.forEach(function (coffee) {
         if (
+            selectedRoast === 'all' ||
             coffee.roast === selectedRoast &&
             coffee.name.toLowerCase().includes(searchValue)
         ) {
             filteredCoffees.push(coffee);
         }
     });
+
+
 
     coffeesContainer.innerHTML = renderCoffees(filteredCoffees);
 }
