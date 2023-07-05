@@ -37,20 +37,10 @@ function updateCoffees(e) {
 
     coffeesContainer.innerHTML = renderCoffees(filteredCoffees);
 }
+
 let searchInput = document.getElementById('search');
 searchInput.addEventListener('input', updateCoffees);
 
-// function updateCoffees(e) {
-//     e.preventDefault(); // don't submit the form, we just want to update the data
-//     let selectedRoast = roastSelection.value;
-//     let filteredCoffees = [];
-//     coffees.forEach(function (coffee) {
-//         if (coffee.roast === selectedRoast) {
-//             filteredCoffees.push(coffee);
-//         }
-//     });
-//     coffeesContainer.innerHTML = renderCoffees(filteredCoffees);
-// }
 
 let coffees = [
     { id: 1, name: 'Light City', roast: 'light' },
@@ -75,8 +65,7 @@ let roastSelection = document.getElementById('roast-selection');
 
 coffeesContainer.innerHTML = renderCoffees(coffees);
 
-submitButton.addEventListener('click', updateCoffees);
+// submitButton.addEventListener('click', updateCoffees);
 
 roastSelection.addEventListener('input', updateCoffees);
 
-searchInput.addEventListener('input', updateCoffees);
