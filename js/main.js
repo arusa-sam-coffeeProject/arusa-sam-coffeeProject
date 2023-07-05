@@ -107,3 +107,8 @@ addCoffeeForm.addEventListener('submit', function(e) {
 
 // Render the coffees on the page
 coffeesContainer.innerHTML = renderCoffees(coffees);
+
+
+
+
+

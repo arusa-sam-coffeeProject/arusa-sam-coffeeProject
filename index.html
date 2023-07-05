@@ -5,20 +5,24 @@
     <title></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- this is the navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Berry To Bean</a>
+        
+        <a class="navbar-brand" href="#"> <img src="img/coffee-bean-icon.svg" alt="bean" width="20px" height="20px">Berry To Bean</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Our Promise</a>
+                <a class="nav-link bold " aria-current="page" href="#">Our Promise</a>
                 <a class="nav-link" href="#">Our Mission</a>
                 <a class="nav-link" href="#">Our Partners</a>
             </div>
@@ -28,10 +32,10 @@
 <!-- this is the end of the navbar -->
 
 <!-- this is the beginning of the hero scene -->
-<div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold text-body-emphasis">Berry To Bean</h1>
+<div class=" hero-container px-4 pt-5  text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis header">Berry To Bean</h1>
     <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">From farm to cup, Brewing a sustainable Future</p>
+        <p class="lead mb-5 motto ">From <em class="under">Farm</em> to cup, Brewing a <em class="under">Sustainable</em> Future</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
             <form>
 
@@ -48,8 +52,9 @@
                 <label for="search"></label>
                 <input id="search" type="text" placeholder="Search by name"/>
             </form>
-            <!--            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>-->
-            <form id="add-coffee-form">
+
+
+            <form id="add-coffee-form add-coffee">
                 <label for="coffee-name">Coffee Name:</label>
                 <input type="text" id="coffee-name" required>
 
@@ -66,22 +71,21 @@
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
         <div class="container px-5">
-            <!--            <img src="pour-over-gif.gif" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">-->
+                        <img src="img/berry-to-bean.gif" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
         </div>
     </div>
 </div>
 <!-- end of the hero scene -->
 
 <!--// table redone-->
-<div class=container>
+<div class="container ">
     <div class="row">
-        <div class="col coffee">
-            <!--                <th>ID</th>-->
-            <header></header>
-            <p></p>
+        <div class="col coffee ">
+            <header class=""></header>
+            <p class=""></p>
+            <div class="container" id="coffees"></div>
         </div>
     </div>
-    <div class="container" id="coffees"></div>
 
 </div>
 

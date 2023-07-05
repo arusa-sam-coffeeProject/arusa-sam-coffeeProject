@@ -1,9 +1,57 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+:root {
+    --olive-color: #8D8741;
+    --blue-color: #659DBD;
+    --tan-color: #DAAD86;
+    --sand-color: #BC986A;
+    --cream-color: #FBEEC1;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+
+}
+
+
+.navbar{
+    background-color: #8D8741;
+    color: #659DBD;
+
+}
+
+.hero-container{
+    background-color: #DAAD86;
+
+}
+
+.header{
+    font-family: 'Caprasimo', cursive;
+}
+
+
+.under {
+    text-decoration: wavy underline  #659DBD;
+    text-underline-offset: 5px;
+}
+
+.motto {
+    color:black ;
+}
+
+a.navbar-brand{
+    font-family: 'Caprasimo', cursive;
+}
+a.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+
+form{
+    background-color: #659DBD;
+}
+
+.add-coffee{
+    display: flex;
+    flex-direction: column;
 }
