@@ -38,8 +38,6 @@ function updateCoffees(e) {
         }
     });
 
-
-
     coffeesContainer.innerHTML = renderCoffees(filteredCoffees);
 }
 
@@ -105,9 +103,6 @@ addCoffeeForm.addEventListener('submit', function(e) {
 });
 // Render the coffees on the page
 coffeesContainer.innerHTML = renderCoffees(coffees);
-
-
-
 
 function hideBeanPopup() {
     console.log("hi")

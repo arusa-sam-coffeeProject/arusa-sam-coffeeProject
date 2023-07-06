@@ -11,7 +11,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 }
-
 .card-bgg{
     background-image: url("../img/coffee-bean.png");
     background-size: 110% auto;
@@ -25,23 +24,14 @@
     width:30%;
     aspect-ratio: 9/6;
     padding: 0px 20px;
-
 }
-
 .coffee-paragraph{
     color: var(--brown-color);
 }
-
 .coffee-card{
     color: var(--cream-color);
     font-family: 'Caprasimo', cursive;
-    /*border-bottom: solid;*/
-    /*border-color:  var(--blue-color);*/
-
-
 }
-
-
 .navbar{
     background-color: var(--olive-color);
     color: var(--blue-color);
@@ -104,7 +94,6 @@ button{
     --bs-text-opacity: 1;
     color: var(--brown-color)!important;
 }
-
 
 /* this is for the coffee bean animation */
 .coffee-bean{
@@ -205,7 +194,6 @@ button{
         transform: translateY(0em);
     }
 }
-
 @keyframes wave-text {
     00% {
         transform: translateY(0em);
@@ -217,7 +205,7 @@ button{
         transform: translateY(0em);
     }
 }
-
+/* bean pop up */
 .card {
     width: 300px;
     height: 220px;
@@ -230,36 +218,29 @@ button{
     gap: 13px;
     overflow: hidden;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
-    /*transition-delay: 5.0s;*/
 }
-
 #beanSvg {
     width: 50px;
 }
-
 #beanSvg g path {
     fill: rgb(97, 81, 81);
 }
-
 .beanHeading {
     font-size: 1.2em;
     font-weight: 800;
     color: rgb(26, 26, 26);
 }
-
 .beanDescription {
     text-align: center;
     font-size: 0.7em;
     font-weight: 600;
     color: rgb(99, 99, 99);
 }
-
 .buttonContainer {
     display: flex;
     gap: 20px;
     flex-direction: row;
 }
-
 .acceptButton {
     width: 80px;
     height: 30px;
@@ -271,7 +252,6 @@ button{
     font-weight: 600;
     border-radius: 20px;
 }
-
 .declineButton {
     width: 80px;
     height: 30px;
@@ -283,17 +263,14 @@ button{
     font-weight: 600;
     border-radius: 20px;
 }
-
 .declineButton:hover {
     background-color: #ebebeb;
     transition-duration: .2s;
 }
-
 .acceptButton:hover {
     background-color: #9173ff;
     transition-duration: .2s;
 }
-
 .beanscoop-wrapper {
     position: fixed;
     top: 0;
