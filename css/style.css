@@ -3,55 +3,103 @@
     --blue-color: #659DBD;
     --tan-color: #DAAD86;
     --sand-color: #BC986A;
-    --cream-color: #FBEEC1;
+   --cream-color: #FBEEC1;
+    --brown-color: #612d22
 }
 
 *{
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 
+
 }
 
 
 .navbar{
-    background-color: #8D8741;
-    color: #659DBD;
+    background-color: var(--olive-color);
+    color: var(--blue-color);
 
 }
 
 .hero-container{
-    background-color: #DAAD86;
+    background-color: var(--tan-color);
 
 }
 
 .header{
     font-family: 'Caprasimo', cursive;
+    font-size: 5em;
+
 }
 
 
 .under {
-    text-decoration: wavy underline  #659DBD;
+    text-decoration: wavy underline  var(--blue-color);
     text-underline-offset: 5px;
 }
 
 .motto {
-    color:black ;
+    color:  var(--brown-color);
 }
 
 a.navbar-brand{
     font-family: 'Caprasimo', cursive;
+    color:   var(--brown-color)
+
 }
 a.nav-link{
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
+    color: var(--cream-color);
 }
 
 
-form{
-    background-color: #659DBD;
-}
-
-.add-coffee{
+form {
+    background-color: var(--blue-color);
     display: flex;
     flex-direction: column;
+}
+
+
+.header-prize{
+    display: flex;
+    flex-direction: column;
+}
+
+.formz{
+    padding: 1em;
+    margin: 2em;
+
+
+}
+
+.form-bg{
+    color:var(--cream-color);
+    background-color:var(--tan-color) ;
+
+}
+
+button{
+    background-color:var(--olive-color);
+    color:var(--cream-color) ;
+    border-color: var(--blue-color);
+}
+
+.table-section{
+    background-color:var(--tan-color);
+    max-width: 100%;
+}
+.input-bg{
+    background-color:var(--cream-color);
+}
+
+
+.h1{
+    color: var(--brown-color);
+}
+
+
+.text-body-emphasis {
+    --bs-text-opacity: 1;
+    color: var(--brown-color)!important;
 }

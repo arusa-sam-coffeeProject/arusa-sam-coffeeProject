@@ -32,16 +32,26 @@
 <!-- this is the end of the navbar -->
 
 <!-- this is the beginning of the hero scene -->
-<div class=" hero-container px-4 pt-5  text-center border-bottom">
+<div class=" hero-container  px-4 pt-5  text-center border-bottom">
     <h1 class="display-4 fw-bold text-body-emphasis header">Berry To Bean</h1>
-    <div class="col-lg-6 mx-auto">
-        <p class="lead mb-5 motto ">From <em class="under">Farm</em> to cup, Brewing a <em class="under">Sustainable</em> Future</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <form>
+<!--    <div class="col-lg-6 mx-auto">-->
+        <p class="lead mb-5 motto ">From <strong class="under">Farm</strong> to cup, Brewing a <strong class="under">Sustainable</strong> Future</p>
+        <div class=" header-prize">
 
+            <div class="overflow-hidden" style="max-height: 50vh;">
+                <div class="container px-4">
+                    <img src="img/berry-to-bean.gif" class="img-fluid border rounded-3 shadow-lg coffee-gif" alt="Example image" width="700" height="500" loading="lazy">
+                </div>
+            </div>
+
+
+        <div class="col">
+            <div class="row form-bg">
+
+            <form class="col formz me-2">
                 <h6>Coffee Roast</h6>
                 <label for="roast-selection"></label>
-                <select id="roast-selection">
+                <select id="roast-selection" class="input-bg">
                     <option>all</option>
                     <option>light</option>
                     <option>medium</option>
@@ -49,36 +59,37 @@
                 </select>
 
                 <h6>Coffee Name</h6>
-                <label for="search"></label>
-                <input id="search" type="text" placeholder="Search by name"/>
+                <label for="search" ></label>
+                <input id="search" type="text" placeholder="Search by name" class="input-bg"/>
             </form>
 
 
-            <form id="add-coffee-form add-coffee">
-                <label for="coffee-name">Coffee Name:</label>
-                <input type="text" id="coffee-name" required>
+<!--add a coffee-->
+            <form class="col formz ms-2" id="add-coffee-form add-coffee">
+                <label for="coffee-name" >Coffee Name:</label>
+                <input type="text" id="coffee-name" class="input-bg" required>
+
 
                 <label for="coffee-roast">Coffee Roast:</label>
-                <select id="coffee-roast">
+                <select id="coffee-roast" class="input-bg">
                     <option value="light">Light</option>
                     <option value="medium">Medium</option>
                     <option value="dark">Dark</option>
                 </select>
 
-                <button type="submit">Add Coffee</button>
+                <button type="submit" class="rounded-3">Add Coffee</button>
             </form>
+            </div>
+        </div>
+
         </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-        <div class="container px-5">
-                        <img src="img/berry-to-bean.gif" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-        </div>
-    </div>
-</div>
+
+
 <!-- end of the hero scene -->
 
 <!--// table redone-->
-<div class="container ">
+<div class="container table-section ">
     <div class="row">
         <div class="col coffee ">
             <header class=""></header>
