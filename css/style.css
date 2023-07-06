@@ -1,6 +1,6 @@
 :root {
     --olive-color: #8D8741;
-    --blue-color: #659DBD;
+    --blue-color: #9cab99;
     --tan-color: #DAAD86;
     --sand-color: #BC986A;
    --cream-color: #FBEEC1;
@@ -40,11 +40,11 @@
     background-color: var(--tan-color);
 }
 .under {
-    text-decoration: wavy underline  var(--blue-color);
+    text-decoration: wavy underline  var(--olive-color);
     text-underline-offset: 5px;
 }
 .motto {
-    color:  var(--blue-color);
+    color:  var(--olive-color);
     font-size: 30px;
 }
 a.navbar-brand{
@@ -69,6 +69,7 @@ form {
 .formz{
     padding: 1em;
     margin: 2em;
+    border-radius: 20px;
 }
 .form-bg{
     color:var(--cream-color);
@@ -209,7 +210,7 @@ button{
 .card {
     width: 300px;
     height: 220px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--blue-color);
     display: flex;
     flex-direction: column;
     align-items: center;
