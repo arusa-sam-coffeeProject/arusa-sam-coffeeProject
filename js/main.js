@@ -2,10 +2,12 @@
 "use strict";
 
 function renderCoffee(coffee) {
-    let html = '<div class="coffee card-bgg">';
-    html += '<h2 class="coffee-card">' + coffee.name + '</h2>';
-    html += '<p class="coffee-paragraph">' + coffee.roast + '</p>';
-    html += '</div>';
+    let html = `
+        <div class="coffee card-bgg">
+            <h2 class="coffee-card">${coffee.name}</h2>
+            <p>${coffee.roast}</p>
+        </div>
+    `;
 
     return html;
 }
@@ -102,11 +104,20 @@ addCoffeeForm.addEventListener('submit', function(e) {
     addCoffeeForm.reset(); // Reset the form inputs
 });
 
+function hideBeanPopup() {
+    console.log("hi")
+    let beanPopup = document.getElementById('beanScoop');
+    beanPopup.style.display = 'none';
+    // Set a cookie here to remember user preference if necessary
+}
+
+document.getElementById('allow-btn').addEventListener('click', hideBeanPopup);
+document.getElementById('deny-btn').addEventListener('click', hideBeanPopup);
 
 
 
-// Render the coffees on the page
-coffeesContainer.innerHTML = renderCoffees(coffees);
+
+
 
 
 
