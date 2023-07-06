@@ -103,6 +103,11 @@ addCoffeeForm.addEventListener('submit', function(e) {
 
     addCoffeeForm.reset(); // Reset the form inputs
 });
+// Render the coffees on the page
+coffeesContainer.innerHTML = renderCoffees(coffees);
+
+
+
 
 function hideBeanPopup() {
     console.log("hi")
@@ -113,7 +118,6 @@ function hideBeanPopup() {
 
 document.getElementById('allow-btn').addEventListener('click', hideBeanPopup);
 document.getElementById('deny-btn').addEventListener('click', hideBeanPopup);
-
 
 
 
