@@ -111,14 +111,13 @@ coffeesContainer.innerHTML = renderCoffees(coffees);
 
 function hideBeanPopup() {
     console.log("hi")
-    let beanPopup = document.getElementById('beanScoop');
+    let beanPopup = document.querySelector('.beanscoop-wrapper');
     beanPopup.style.display = 'none';
     // Set a cookie here to remember user preference if necessary
 }
 
 document.getElementById('allow-btn').addEventListener('click', hideBeanPopup);
 document.getElementById('deny-btn').addEventListener('click', hideBeanPopup);
-
 
 
 
