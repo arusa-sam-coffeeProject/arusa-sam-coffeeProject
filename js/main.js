@@ -2,9 +2,9 @@
 "use strict";
 
 function renderCoffee(coffee) {
-    let html = '<div class="coffee">';
-    html += '<h2>' + coffee.name + '</h2>';
-    html += '<p>' + coffee.roast + '</p>';
+    let html = '<div class="coffee card-bgg">';
+    html += '<h2 class="coffee-card">' + coffee.name + '</h2>';
+    html += '<p class="coffee-paragraph">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;

@@ -11,6 +11,25 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 }
+
+.card-bgg{
+    background-color: var(--olive-color) ;
+    border: 4mm ridge var(--sand-color);
+    padding: 1em;
+
+}
+
+.coffee-paragraph{
+    color: var(--brown-color);
+}
+
+.coffee-card{
+    color: var(--cream-color);
+    font-family: 'Caprasimo', cursive; ;
+}
+
+
+
 .navbar{
     background-color: var(--olive-color);
     color: var(--blue-color);
