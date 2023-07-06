@@ -228,9 +228,11 @@ button{
     justify-content: center;
     padding: 20px 30px;
     gap: 13px;
-    position: absolute;
     overflow: hidden;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+    position: absolute;
+    top:20rem;
+    right: 37rem;
 }
 
 #beanSvg {
