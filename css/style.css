@@ -42,7 +42,8 @@
     text-underline-offset: 5px;
 }
 .motto {
-    color:  var(--brown-color);
+    color:  var(--blue-color);
+    font-size: 30px;
 }
 a.navbar-brand{
     font-family: 'Caprasimo', cursive;
@@ -57,6 +58,7 @@ form {
     background-color: var(--blue-color);
     display: flex;
     flex-direction: column;
+    border: 3mm ridge var(--sand-color);
 }
 .header-prize{
     display: flex;
